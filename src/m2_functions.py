@@ -34,6 +34,8 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
@@ -103,6 +105,25 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    ben = rg.SimpleTurtle()
+    ben.pen = rg.Pen('red', 20)
+
+    ben.forward(25)
+    ben.draw_square(20)
+    ben.end_fill()
+
+
+def turtle5():
+    sam = rg.SimpleTurtle()
+    sam.pen = rg.Pen('yellow', 10)
+    sam.draw_regular_polygon(5, 20)
+
+    smith = rg.SimpleTurtle()
+    smith.pen = rg.Pen('green', 10)
+    smith.draw_circle(20)
+
+
 ########################################################################
 #
 # DONE: 2.
@@ -137,7 +158,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -167,7 +188,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -183,7 +204,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
