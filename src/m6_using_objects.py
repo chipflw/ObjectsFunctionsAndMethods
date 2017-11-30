@@ -81,7 +81,7 @@ def circle_and_rectangle():
            150.0
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #   -- ANY objects that meet the criteria are fine.
     # Put a statement in   main   to test this function
     #    (by calling this function).
@@ -89,9 +89,10 @@ def circle_and_rectangle():
     # IMPORTANT: Use the DOT TRICK to guess the names of the relevant
     #       instance variables for outline thickness, etc.
     # ------------------------------------------------------------------
-
+    x = 100
+    y = 100
     window = rg.RoseWindow()
-    center = rg.Point(100,100)
+    center = rg.Point(x,y)
     circle1 = rg.Circle(center, 30)
     circle1.fill_color = 'blue'
     circle1.attach_to(window)
@@ -107,6 +108,18 @@ def circle_and_rectangle():
     print(circle1.outline_thickness)
     print(circle1.fill_color)
     print(circle1.center)
+    print(x)
+    print(y)
+
+    print(rectangle.outline_thickness)
+    print(rectangle.fill_color)
+    cent = rectangle.get_center()
+    print(cent)
+    print(cent.x)
+    print(cent.y)
+
+
+
 
 
 
